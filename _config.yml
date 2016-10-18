@@ -6,14 +6,25 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: BKVelo
+logo: weblogo.png
+email: bkvelo.org.uk@gmail.com
+# A strapline for your site
 description: > # this means to ignore newlines until "baseurl:"
-  Just another blog site that I'm testing.
+  To Sweet's and Beyond....
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: uzerp
-github_username:  uzerp
+url: "http://bkvelo.org.uk" # the base hostname & protocol for your site
+
+#Social Media
+facebook_username: veloist.cc
+github_username:  mshiner
+instagram_username: bkvelo
+twitter_username: bkvelo
+youtube_username: bkvelo
 
 # Build settings
+include: ['_pages']
 markdown: kramdown
+
+#Have to show future posts for future events.
+future: true
