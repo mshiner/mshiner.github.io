@@ -15,7 +15,7 @@ title: Upcoming Rides
   <ul class="post-list">
     {% for post in site.categories.ride reversed %}
       {% capture rideDate %}{{post.date | date: '%s' }}{% endcapture %}
-      {% if rideDate <= currentDate %}
+      {% if rideDate >= currentDate %}
         <li>
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
