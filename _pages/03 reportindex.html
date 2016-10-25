@@ -1,11 +1,10 @@
 ---
 layout: default
 title: Ride Reports
+permalink: /reports/
 ---
 
 <div class="home">
-
-  {% capture currentDate %}{{'now' | date: '%s' }}{% endcapture %}
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
@@ -13,27 +12,15 @@ title: Ride Reports
 
   <ul class="post-list">
     {% for post in site.categories.report %}
-      {% capture rideDate %}{{post.date | date: '%s' }}{% endcapture %}
-      {% if rideDate <= currentDate %}
         <li>
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
-          {{rideDate}}
-          When: <span class="post-meta">{{ post.date | date: "%b %-d, %Y %l:%M%P" }}</span>
-          Start From: <span class="post-meta">{{ post.start_from }}</span>
-          <br>
-          {% if post.duration %}
-            Duration: <span class="post-meta">{{ post.duration }}</span>
-          <br>
-          {% endif %}
-
-        Ride summary: <span class="post-meta">{{ post.excerpt }}</span>
+        Report Summary: <span class="post-meta">{{ post.excerpt }}</span>
       </li>
-      {% endif %}
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe to ride list <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe to {{ site.title }} news <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
