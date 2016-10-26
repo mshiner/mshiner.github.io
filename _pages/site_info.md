@@ -22,6 +22,20 @@ Or a map....
 
 ### How to get to Sweet's Tea Rooms
 
-{% raw %}
-<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Sweetscafewesthaysomerset&amp;ie=UTF8&amp;&amp;output=embed"></iframe>
-{% endraw %}
+<div>
+<iframe width="310" height="255" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Sweetscafewesthaysomerset&amp;ie=UTF8&amp;&amp;output=embed"></iframe>
+</div>
+
+
+Or a twitter timeline....
+
+<div>
+  <a class="twitter-timeline"
+  href="https://twitter.com/bkvelo"
+  width="310"
+  height="300"
+  data-tweet-limit="3">
+  Tweets by bkvelo
+  </a>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
