@@ -1,0 +1,43 @@
+<!-- next ride -->
+
+<p id="nextride"></p>
+
+<script>
+var fruits=[];
+
+{% capture LastSiteUpdate %}{{'now' | date: '%s' }}{% endcapture %}
+
+{% for post in site.categories.ride reversed %}
+{% capture rideDate %}{{post.date | date: '%s' }}{% endcapture %}
+{% if rideDate >= LastSiteUpdate %}
+    fruits.push({
+    title: "{{ post.title }}",
+    link: "{{ post.url | prepend: site.baseurl }}",
+    when: "{{ post.date | date: '%b %-d, %Y %l:%M%P' }}",
+    start: "{{ post.start_from }}",
+    duration: "{{ post.duration }}",
+    timestamp: {{post.date | date: '%s' }},
+    excerpt: "{{ post.excerpt | strip_newlines | strip_html }}"
+  });
+{% endif %}
+{% endfor %}
+
+var text, fLen, i;
+fLen = 1;
+  text = "<ul "+"class="+"post-list"+">";
+    for (i = 0; i < fLen; i++) {
+      if (fruits[i].timestamp>Math.round(new Date().getTime()/1000)){
+          text += "<li>" +
+            "<h2>"+"<a class="+"post-link "+"href="+fruits[i].link+">"+fruits[i].title+"</a>"+"</h2>"
+            +"When  : "+ "<span class="+"post-meta"+">"+fruits[i].when +"</span>"
+            +"          Start From :  "+ "<span class="+"post-meta"+">"+fruits[i].start +"</span>"+"<br>"
+            +"Duration  : "+ "<span class="+"post-meta"+">"+fruits[i].duration +"</span>"+"<br>"
+            +"Ride Summary  : "+ "<span class="+"post-meta"+">"+fruits[i].excerpt +"</span>"+
+
+            "</li>";
+            }
+          }
+          text += "</ul>";
+
+    document.getElementById("nextride").innerHTML = text;
+</script>
