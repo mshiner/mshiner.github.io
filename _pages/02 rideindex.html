@@ -16,7 +16,7 @@ permalink: /upcoming_rides/
 
     <script>
     var fruits=[];
-    {% for post in site.categories.ride reversed %}
+    {% for post in site.categories.rides reversed %}
     {% capture rideDate %}{{post.date | date: '%s' }}{% endcapture %}
     {% if rideDate >= LastSiteUpdate %}
         fruits.push({

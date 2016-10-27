@@ -9,7 +9,7 @@ This particular file is written in Markdown, but it has no YAML front matter so 
 
 {% include calendar-subscribe.html %}
 
-To include a frame of the next ride....
+To include details of the next ride....
 
 ## Next ride
 

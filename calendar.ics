@@ -31,7 +31,7 @@ END:STANDARD
 
 END:VTIMEZONE
 
-{% for post in site.categories.ride %}
+{% for post in site.categories.rides %}
 {% capture start_time %}{{ post.date | date: '%Y%m%d' }}T{{ post.date | date: '%l:%M' | replace: ':', ''}}00{% endcapture %}
 BEGIN:VEVENT
 UID:{{ start_time }}@bkvelo.org.uk

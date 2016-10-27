@@ -2,8 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-06-21 11:52:24 +0000
-categories: jekyll report
-start_from: Brent Knoll Village Hall
+categories: reports
 ---
 You’ll see this post in your `_posts` directory.
 
