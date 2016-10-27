@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="60px"
+   height="60px"
+   viewBox="0 0 60 60"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Strava.svg">
+  <title
+     id="title4141">Strava</title>
+  <metadata
+     id="metadata18">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Strava</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1871"
+     inkscape:window-height="1056"
+     id="namedview16"
+     showgrid="false"
+     inkscape:zoom="3.9333333"
+     inkscape:cx="-1.398305"
+     inkscape:cy="30"
+     inkscape:window-x="49"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g10" />
+  <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+  <defs
+     id="defs6" />
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     sketch:type="MSPage">
+    <g
+       id="Delicious"
+       sketch:type="MSArtboardGroup">
+      <g
+         sketch:type="MSLayerGroup"
+         id="g10">
+        <path
+           d="M0.336871032,30 C0.336871032,13.4314567 13.5672313,0 29.8877097,0 C46.208188,0 59.4385483,13.4314567 59.4385483,30 C59.4385483,46.5685433 46.208188,60 29.8877097,60 C13.5672313,60 0.336871032,46.5685433 0.336871032,30 Z M0.336871032,30"
+           fill="#FFFFFF"
+           sketch:type="MSShapeGroup"
+           id="path12"
+           style="fill:#b3b3b3" />
+        <path
+           d="M59.4385483,30 C59.4385483,46.5685433 46.208188,60 29.8877097,60 C23.8348308,60 18.2069954,58.1525134 13.5216148,54.9827754 L47.3818361,5.81941103 C54.6937341,11.2806503 59.4385483,20.0777973 59.4385483,30 Z M59.4385483,30"
+           id="reflec"
+           fill-opacity="0.08"
+           fill="#000000"
+           sketch:type="MSShapeGroup" />
+        <g
+           style="fill:#fc4c01"
+           id="echelon-orange"
+           sketch:type="MSLayerGroup"
+           transform="translate(16.5,9.7457624)">
+          <path
+             inkscape:connector-curvature="0"
+             d="m 11,14 4,9 7,0 L 11,0 0,23 l 7,0 4,-9"
+             id="Fill-15"
+             sketch:type="MSShapeGroup" />
+          <path
+             style="fill-opacity:0.5"
+             inkscape:connector-curvature="0"
+             d="m 19,40 -8,-17 5,0 3,7 3,-7 5,0 -8,17"
+             id="Fill-14"
+             sketch:type="MSShapeGroup" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -32,6 +32,12 @@
           </li>
           {% endif %}
 
+          {% if site.strava_clubid %}
+          <li>
+            {% include icon-strava.html username=site.strava_clubid %}
+          </li>
+          {% endif %}
+
           {% if site.twitter_username %}
           <li>
             {% include icon-twitter.html username=site.twitter_username %}

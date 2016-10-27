@@ -16,11 +16,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://bkvelo.org.uk" # the base hostname & protocol for your site
 
 #Social Media
-facebook_username: veloist.cc
-github_username:  mshiner
+facebook_username: BrentKnollVelo
+github_username:
 instagram_username: bkvelo
 twitter_username: bkvelo
-youtube_username: bkvelo
+youtube_username: UCUJSkCSmA6sBUHh8YkZfPSA
+strava_clubid: 125486
 
 # Build settings
 include: ['_pages']
