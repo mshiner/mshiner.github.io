@@ -38,7 +38,6 @@ BEGIN:VEVENT
 UID:{{ start_time }}@bkvelo.org.uk
 DTSTART;TZID=Europe/London:{{ start_time }}
 DTEND;TZID=Europe/London:{{ end_time }}
-DURATION: {{ post.duration }}
 SUMMARY: {{ post.title }}
 LOCATION: {{ post.start_from }}
 DESCRIPTION: {{ post.excerpt | strip_newlines | strip_html }}
