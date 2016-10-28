@@ -15,7 +15,7 @@ var fruits=[];
     link: "{{ post.url | prepend: site.baseurl }}",
     when: "{{ post.date | date: '%b %-d, %Y %l:%M%P' }}",
     start: "{{ post.start_from }}",
-    duration: {{ post.duration }},
+    duration: "{{ post.duration }}",
     timestamp: {{post.date | date: '%s' }},
     excerpt: "{{ post.excerpt | strip_newlines | strip_html }}"
   });
