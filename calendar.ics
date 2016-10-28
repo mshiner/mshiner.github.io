@@ -33,11 +33,15 @@ END:VTIMEZONE
 
 {% for post in site.categories.rides %}
 {% capture start_time %}{{ post.date | date: '%Y%m%d' }}T{{ post.date | date: '%R' | replace: ':', ''}}00{% endcapture %}
+{% capture end_time %}{{ post.date | date: '%Y%m%d' }}T{{ post.date | date: '%R' | split: ':' | first | plus: post.duration }}0000{% endcapture %}
 BEGIN:VEVENT
 UID:{{ start_time }}@bkvelo.org.uk
 DTSTART;TZID=Europe/London:{{ start_time }}
+DTEND;TZID=Europe/London:{{ end_time }}
+DURATION: {{ post.duration }}
 SUMMARY: {{ post.title }}
-DESCRIPTION: {{post.excerpt | strip_newlines | strip_html }}
+LOCATION: {{ post.start_from }}
+DESCRIPTION: {{ post.excerpt | strip_newlines | strip_html }}
 END:VEVENT
 {% endfor %}
 

@@ -7,7 +7,6 @@ posted centrally without the email round robin. Then things got out of hand.
 
 This particular file is written in Markdown, but it has no YAML front matter so is ignored by the build. It is included in the site index so you can write your home page without any html tags.
 
-{% include calendar-subscribe.html %}
 
 To include details of the next ride....
 

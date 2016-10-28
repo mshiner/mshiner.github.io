@@ -24,7 +24,7 @@ permalink: /upcoming_rides/
         link: "{{ post.url | prepend: site.baseurl }}",
         when: "{{ post.date | date: '%b %-d, %Y %l:%M%P' }}",
         start: "{{ post.start_from }}",
-        duration: "{{ post.duration }}",
+        duration: {{ post.duration }},
         timestamp: {{post.date | date: '%s' }},
         excerpt: "{{ post.excerpt | strip_newlines | strip_html }}"
       });
@@ -76,7 +76,8 @@ permalink: /upcoming_rides/
   </ul>
 -->
 
-
+  {% include calendar-subscribe.html %}
   <p class="rss-subscribe">subscribe to ride list <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
 
 </div>
