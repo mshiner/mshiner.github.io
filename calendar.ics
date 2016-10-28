@@ -32,8 +32,14 @@ END:STANDARD
 END:VTIMEZONE
 
 {% for post in site.categories.rides %}
-{% capture start_time %}{{ post.date | date: '%Y%m%d' }}T{{ post.date | date: '%R' | replace: ':', ''}}00{% endcapture %}
-{% capture end_time %}{{ post.date | date: '%Y%m%d' }}T{{ post.date | date: '%R' | split: ':' | first | plus: post.duration }}0000{% endcapture %}
+{% if post.duration == "All Day" %}
+  {% capture start_time %}{{ post.date | date: '%Y%m%d' }}{% endcapture %}
+  {% assign end_time = "" %}
+{% else %}
+  {% capture start_time %}{{ post.date | date: '%Y%m%d' }}T{{ post.date | date: '%R' | replace: ':', ''}}00{% endcapture %}
+  {% capture end_time %}{{ post.date | date: '%Y%m%d' }}T{{ post.date | date: '%R' | split: ':' | first | plus: post.duration }}0000{% endcapture %}
+{% endif %}
+
 {% capture sumy %}{{ post.title }}{% endcapture %}
 {% capture locn %}{{ post.start_from }}{% endcapture %}
 {% capture desc %}{{ post.excerpt | strip_newlines | strip_html }}{% endcapture %}

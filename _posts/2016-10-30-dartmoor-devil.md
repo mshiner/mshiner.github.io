@@ -4,7 +4,7 @@ title:  "The Dartmoor Devil"
 date:   2016-10-30 09:00
 categories: rides
 start_from: Bovey Tracey, Devon
-duration: 6
+duration: All Day
 ---
 Audax UK event - 106km of Dartmoor hills and moors.
 
