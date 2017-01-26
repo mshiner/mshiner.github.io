@@ -1,6 +1,6 @@
 I decided to start this Jekyll build because of my dissatisfaction with Wordpress.
 
-We were using it with various plugins and the site became a bit of a management and security hassle.
+We were using it with various plugins and the site became a bit of a management and bloody security hassle.
 
 Originally the site was conceived as a place where rides starting in Brent Knoll and the surrounding area can be
 posted centrally without the email round robin. Then things got out of hand.
